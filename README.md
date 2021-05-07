@@ -2,7 +2,7 @@
 
 ### Live applicaion URL
 
-[Visit Here](https://www.astramind.io/)
+[Visit Here](https://cimac-ui.netlify.app)
 
 #
 

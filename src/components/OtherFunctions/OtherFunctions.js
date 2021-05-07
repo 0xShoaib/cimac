@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Switch, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 import { HiOutlineDotsVertical } from "react-icons/hi";
 
