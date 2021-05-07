@@ -1,0 +1,31 @@
+@import "../../assets/scss/variable.scss";
+
+.banner__card {
+  background-image: url("../../assets/img/Macbook.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: $orange;
+
+  width: 600px;
+  height: 140px;
+  border-radius: 20px;
+
+  padding-left: 40px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-weight: 600;
+    color: $white;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    color: $white;
+    letter-spacing: 0.5;
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../assets/scss/variable.scss";
+
+.sidebar {
+  background-color: $blue;
+
+  width: 100px;
+  height: calc(100vh - 20px);
+  border-radius: 20px;
+
+  margin: 10px;
+  padding: 25px 0px;
+
+  position: fixed;
+
+  .logo__wrapper {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 22px;
+      color: $white;
+      letter-spacing: 1.2px;
+
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .menu__wrapper {
+    width: 100%;
+
+    p {
+      width: 80px;
+
+      display: flex;
+      align-items: center;
+
+      padding: 15px 0 15px 20px;
+      margin-left: 20px;
+
+      cursor: pointer;
+
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        color: $white;
+      }
+
+      &.active {
+        background-color: $white;
+
+        svg {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  .logout__wrapper {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: $gray;
+    }
+  }
+}

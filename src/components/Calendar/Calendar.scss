@@ -1,0 +1,118 @@
+@import "../../assets/scss/variable.scss";
+
+.calendar__card {
+  width: 600px;
+
+  margin-top: 20px;
+
+  padding: 10px;
+
+  //   background-color: pink;
+
+  .calendar__card__title {
+    font-size: 18px;
+  }
+
+  .calendar__card__title__btns {
+    margin-left: 10px;
+
+    button {
+      background-color: transparent;
+      border: none;
+
+      height: 24px;
+
+      cursor: pointer;
+      background-color: $pink;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-of-type {
+        padding-left: 6px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+
+      &:last-of-type {
+        padding-right: 6px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        color: $white;
+      }
+    }
+  }
+
+  .calendar__card__title__month {
+    background-color: $gray;
+    padding: 5px 15px;
+    border-radius: 16px;
+    color: $darkGray;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      color: $black;
+      margin-right: 6px;
+    }
+  }
+}
+
+.date__card__wrapper {
+  margin: 30px 0px;
+  padding: 20px 0px;
+
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+
+  .date__card {
+    background-color: $white;
+    padding: 15px 12px;
+    border-radius: 12px;
+
+    width: 60px;
+    margin: 10px;
+
+    cursor: pointer;
+
+    box-shadow: 0px 10px 20px 0.1px rgba($color: #000000, $alpha: 0.1);
+
+    &.active {
+      .date__card__day {
+        color: $white;
+      }
+      .date__card__date {
+        color: $white;
+      }
+      .date__card__event {
+        background-color: $white !important;
+      }
+    }
+
+    .date__card__day {
+      font-weight: 600;
+    }
+    .date__card__date {
+      margin-top: 10px;
+      font-size: 18px;
+      color: $darkGray;
+    }
+    .date__card__event {
+      margin-top: 5px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      //   background-color: $blue;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// Poppins Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+@import "./variable.scss";
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  margin-left: 120px;
+  padding: 40px 0px 20px 20px;
+
+  .content__left {
+    width: 600px;
+  }
+
+  .content__right {
+    overflow: hidden;
+    .content__right__inner__wrapper {
+      background-color: $lightGray;
+
+      margin-left: 30px;
+      margin-top: 30px;
+      padding: 20px 0 20px 20px;
+
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+
+      height: 100%;
+    }
+  }
+}
